@@ -31,53 +31,88 @@ const Footer = () => {
       sx={{
         position: 'relative',
         py: 3,
-        px: 15,          
-        backgroundColor: "transparent",
+        px: 15,
+        backgroundColor: 'transparent',
         color: 'white',
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        flexWrap: 'wrap', // satır taşması için
+        gap: 2,           // elemanlar arasında boşluk
+
         '&::before': {
           content: '""',
           position: 'absolute',
           top: 0,
-          left: '8rem',     
-          right: '8rem',   
+          left: '8rem',
+          right: '8rem',
           borderTop: '1px solid #ccc',
           zIndex: 0,
-        }
+        },
+
+        // Responsive düzenleme
+        '@media (max-width: 600px)': {
+          flexDirection: 'column',
+          alignItems: 'center',
+          px: 5,
+
+          '&::before': {
+            left: '1rem',
+            right: '1rem',
+          },
+        },
       }}
     >
-      <Box sx={{
-         display: 'flex',
+      <Box
+        sx={{
+          display: 'flex',
           alignItems: 'center',
-           gap: 1, position: 'relative',
-            zIndex: 1
-             }}>
+          gap: 1,
+          position: 'relative',
+          zIndex: 1,
+          flex: '1 1 auto',
 
-        <CopyrightIcon fontSize="medium"
-         sx={{ 
-          color: 'white'
-           }} />
-
-        <Typography variant="h6"
-         sx={{
-           userSelect: 'text',
+          '@media (max-width: 600px)': {
+            justifyContent: 'center',
+            mb: 1,
+          },
+        }}
+      >
+        <CopyrightIcon
+          fontSize="medium"
+          sx={{
             color: 'white',
-            fontSize:'15px'
-              }}>
+          }}
+        />
 
+        <Typography
+          variant="h6"
+          sx={{
+            userSelect: 'text',
+            color: 'white',
+            fontSize: '15px',
+          }}
+        >
           2025 Hakan Burak DEMİR. All rights reserved.
         </Typography>
       </Box>
 
-      <Box sx={{
-         display: 'flex',
+      <Box
+        sx={{
+          display: 'flex',
           gap: 3,
-           position: 'relative',
-            zIndex: 1
-             }}>
+          position: 'relative',
+          zIndex: 1,
+          flex: '1 1 auto',
+          justifyContent: 'flex-end',
 
+          '@media (max-width: 600px)': {
+            justifyContent: 'center',
+            width: '100%',
+            gap: 2,
+          },
+        }}
+      >
         <IconButton
           aria-label="GitHub"
           component="a"
@@ -87,11 +122,11 @@ const Footer = () => {
           sx={{
             color: 'white',
             padding: '6px',
-            '& svg': { fontSize: '26px' },      
-            '&:hover': { 
-            color: '#FFD700',             
-            filter: 'drop-shadow(0 0 6px #FFD700) drop-shadow(0 0 10px #FFD700)'
-          },  
+            '& svg': { fontSize: '26px' },
+            '&:hover': {
+              color: '#FFD700',
+              filter: 'drop-shadow(0 0 6px #FFD700) drop-shadow(0 0 10px #FFD700)',
+            },
           }}
         >
           <GitHubIcon />
@@ -107,9 +142,10 @@ const Footer = () => {
             color: 'white',
             padding: '6px',
             '& svg': { fontSize: '26px' },
-            '&:hover': { 
-            color: '#0a84ff',
-            filter: 'drop-shadow(0 0 6px #0a84ff) drop-shadow(0 0 10px #0a84ff)'          },
+            '&:hover': {
+              color: '#0a84ff',
+              filter: 'drop-shadow(0 0 6px #0a84ff) drop-shadow(0 0 10px #0a84ff)',
+            },
           }}
         >
           <LinkedInIcon />
@@ -123,9 +159,9 @@ const Footer = () => {
             color: 'white',
             padding: '6px',
             '& svg': { fontSize: '26px' },
-            '&:hover': { 
-              color: '#FFD700',              
-              filter: 'drop-shadow(0 0 6px #FFD700) drop-shadow(0 0 10px #FFD700)'
+            '&:hover': {
+              color: '#FFD700',
+              filter: 'drop-shadow(0 0 6px #FFD700) drop-shadow(0 0 10px #FFD700)',
             },
           }}
         >
