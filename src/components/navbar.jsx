@@ -19,7 +19,7 @@ import { Link } from 'react-scroll';
 // import Education from '../pages/education';
 // import Contact from '../pages/contact';
 
-const menuItems = ['About', 'Experience', 'Skills', 'Education', 'Contact'];
+const menuItems = ['About', 'Experience', 'Skills', 'Education', 'Projects', 'Contact'];
 
 const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);

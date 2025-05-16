@@ -1,53 +1,56 @@
-import Navbar from './components/navbar'
-import Footer from './components/footer'
+import { Box, Container } from '@mui/material';
+import Navbar from './components/navbar';
+import Footer from './components/footer';
 import About from './pages/about';
 import Experience from './pages/experience';
 import Skills from './pages/skills';
 import Education from './pages/education';
 import Projects from './pages/projects';
 import Contact from './pages/contact';
-/////////////////////////////////////
 
 function App() {
   return (
-     <div>
+    <Box>
       <Navbar />
-      
 
+      <Box
+        sx={{
+          background: 'linear-gradient(100deg, hsl(232, 56.10%, 8.00%), rgb(47, 10, 114))',
+          color: 'white',
+          overflowX: 'hidden',
+        }}
+      >
+        <Container maxWidth="lg">
 
-      <div
-   style={{
-   backgroundImage: 'linear-gradient(100deg, hsl(232, 56.10%, 8.00%), rgb(47, 10, 114))',
-      }}>
+          <Box id="about" sx={{ py: { xs: 6, md: 10 }, minHeight: '100vh' }}>
+            <About />
+          </Box>
 
-    <div id="about" style={{ height: '100vh' }}>
-         <About />
-    </div>
+          <Box id="experience" sx={{ py: { xs: 6, md: 10 }, minHeight: '80vh' }}>
+            <Experience />
+          </Box>
 
-    <div id="experience" style={{ height: '80vh' }}>
-          <Experience />
-    </div>
+          <Box id="skills" sx={{ py: { xs: 6, md: 10 }, minHeight: '80vh' }}>
+            <Skills />
+          </Box>
 
-    <div id="skills" style={{ height: '80vh' }}>
-          <Skills />
-    </div>
+          <Box id="education" sx={{ py: { xs: 6, md: 10 }, minHeight: '80vh' }}>
+            <Education />
+          </Box>
 
-    <div id="education" style={{ height: '80vh' }}>
-          <Education />
-    </div>
+          <Box id="projects" sx={{ py: { xs: 6, md: 10 }, minHeight: { xs: 'auto', md: '160vh' } }}>
+            <Projects />
+          </Box>
 
-    {/* <div id="projects" style={{ height: '100vh' }}>
-          <Projects />
-     </div> */}
-    <div id="contact" style={{ height: '60vh' }}>
-          <Contact />
-     </div>
+          <Box id="contact" sx={{ py: { xs: 6, md: 10 }, minHeight: '60vh' }}>
+            <Contact />
+          </Box>
 
-    <Footer/>
-  </div>
+        </Container>
 
-
-    </div>
+        <Footer />
+      </Box>
+    </Box>
   );
 }
 
