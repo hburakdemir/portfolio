@@ -9,16 +9,7 @@ const experienceData = [
       'I used Axios and the Linux terminal to establish frontend-backend connections through SSH and Reverse Proxy technologies, ensuring the project runs properly on the server.',
     ]  
   },
-  {
-    title: '123',
-    location: 'İstanbul, Turkey',
-    date: 'September 2024- January 2025(Remote)',
-    description:[
-      'I have worked on frontend designs in projects using technologies and libraries such as React.js, Material UI, and RESTful APIs, and I have improved myself in this area',
-      'I have developed backend projects using Node.js, PostgreSQL, and Python and worked with database schemas.',
-      'I used Axios and the Linux terminal to establish frontend-backend connections through SSH and Reverse Proxy technologies, ensuring the project runs properly on the server.',
-    ]  
-  },
+  
   {
     title: 'Graphic Designer - Hacettepe Unıversity Yaşam Boyu Öğrenme Merkezi',
     location: 'Ankara, Türkiye',

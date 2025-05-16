@@ -4,6 +4,7 @@ import About from './pages/about';
 import Experience from './pages/experience';
 import Skills from './pages/skills';
 import Education from './pages/education';
+import Projects from './pages/projects';
 import Contact from './pages/contact';
 /////////////////////////////////////
 
@@ -35,6 +36,9 @@ function App() {
           <Education />
     </div>
 
+    {/* <div id="projects" style={{ height: '100vh' }}>
+          <Projects />
+     </div> */}
     <div id="contact" style={{ height: '60vh' }}>
           <Contact />
      </div>
