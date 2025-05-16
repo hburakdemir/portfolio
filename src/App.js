@@ -1,23 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/navbar'
+import Footer from './components/footer'
+import About from './pages/about';
+import Experience from './pages/experience';
+import Skills from './pages/skills';
+import Education from './pages/education';
+import Contact from './pages/contact';
+/////////////////////////////////////
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <div>
+      <Navbar />
+      
+
+
+      <div
+   style={{
+   backgroundImage: 'linear-gradient(100deg, hsl(232, 56.10%, 8.00%), rgb(47, 10, 114))',
+      }}>
+
+    <div id="about" style={{ height: '100vh' }}>
+         <About />
+    </div>
+
+    <div id="experience" style={{ height: '80vh' }}>
+          <Experience />
+    </div>
+
+    <div id="skills" style={{ height: '80vh' }}>
+          <Skills />
+    </div>
+
+    <div id="education" style={{ height: '80vh' }}>
+          <Education />
+    </div>
+
+    <div id="contact" style={{ height: '60vh' }}>
+          <Contact />
+     </div>
+
+    <Footer/>
+  </div>
+
+
     </div>
   );
 }
