@@ -85,13 +85,11 @@ const Navbar = () => {
   position="fixed"
   elevation={!isMobile && scrolled ? 4 : 0}
   sx={{
+    backgroundColor: 'transparent',  
+    backdropFilter: 'blur(10px)',   
+    borderBottom: '1px solid rgba(255, 255, 255, 0.2)', 
+    boxShadow: 'none',               
     transition: '0.3s ease-in-out',
-    backgroundImage: !isMobile && scrolled
-      ? 'linear-gradient(45deg, rgb(10, 25, 143), rgb(11, 31, 53))'
-      : 'none',
-    backgroundColor: !isMobile && scrolled ? 'rgba(10, 25, 143, 0.9)' : 'transparent',
-    boxShadow: !isMobile && scrolled ? '0 2px 10px rgba(0, 0, 0, 0.2)' : 'none',
-    backdropFilter: !isMobile && scrolled ? 'blur(4px)' : 'none',
   }}
 >
 
