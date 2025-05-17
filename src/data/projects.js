@@ -12,7 +12,7 @@ const projects = [
 ],
 
     technologies: ['React', 'JS', 'MUI', 'Node.js','Postgresql','Express','Postman','Postgresql','Express','Postman','Axios'],
-    imageUrl: '/images/project1.png',
+    imageUrl: '/images/elci.png',
   },
 
 
@@ -29,7 +29,7 @@ const projects = [
 ],
 
     technologies: ['React', 'JS', 'Json to Excel', 'Python', 'PaddleOCR', 'Node.js', 'PostgreSQL', 'Express', 'Postman', 'Axios'],
-    imageUrl: '/images/project2.png',
+    imageUrl: '/images/ocrapp.png',
   },
 //   {
 //   title: 'Real-Time Monitoring Dashboard',
