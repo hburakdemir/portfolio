@@ -59,7 +59,7 @@ const projects = [
 ],
 
     technologies: ['React', 'JS', 'Materıal UI',  'Node.js', 'PostgreSQL','SQL', 'Express', 'Postman', 'Axios', 'PgAdmin4'],
-    imageUrl: '/images/ys_portfolio.png',
+    imageUrl: '/images/ysportfolio.png',
   },
 //   {
 //   title: 'Real-Time Monitoring Dashboard',
