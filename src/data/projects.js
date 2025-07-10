@@ -33,7 +33,7 @@ const projects = [
     imageUrl: '/images/ocrapp.png',
   },
   {
-    title: 'BGYARDIM',
+    title: 'Social Aid Management Web App',
     date: 'March 2025 - Present',
     description: [
   "A web application developed to facilitate the distribution of scholarships and book donations to individuals in need.",
